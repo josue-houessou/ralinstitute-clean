@@ -1,0 +1,128 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+h2 {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.imgmain {
+    position: relative;
+}
+
+.imgmain img {
+    width: 100%;
+}
+
+.overlay-text {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+
+.overlay-text-imgmain {
+    top: 25%;
+}
+
+.overlay-text-imgmain2 {
+    top: 50%;
+}
+
+.overlay-text-imgmain3 {
+    top: 75%;
+    font-size: 16px;
+}
+
+.overlay-banner {
+    background-color: #a11a1a;
+    color: white;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.history-section,
+.classes-section {
+    margin: 20px;
+    margin-bottom: 3vw;
+}
+
+.historyText {
+    font-size: 24px;
+}
+
+.equal-height {
+    display: flex;
+    gap: 2;
+}
+
+.equal-height img {
+    max-height: 600px;
+    width: 600px;
+    object-fit: cover;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+/*
+.overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 5px 10px;
+}
+    */
+.carousel-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+/* Responsive Design */
+@media (max-width: 767px) {
+    .overlay-text {
+        display: block;
+        position: static;
+        /* Remove absolute positioning */
+        width: 100%;
+        margin-bottom: 10px;
+        background-color: rgba(255, 255, 255, 0.9);
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .overlay-text-imgmain,
+    .overlay-text-imgmain2,
+    .overlay-text-imgmain3 {
+        top: auto;
+        /* Neutralize previous top values */
+    }
+
+    .imgmain {
+        text-align: center;
+    }
+
+        .history-section,
+        .classes-section {
+            text-align: center;
+        }
+    
+        .afterclasses img {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+}

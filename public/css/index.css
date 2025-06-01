@@ -1,0 +1,138 @@
+#header {
+    margin-bottom: 1vh;
+}
+
+main {
+    margin-bottom: 3vh;
+}
+
+body {
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: rgb(51, 51, 51);
+}
+
+a {
+    text-decoration: none;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Single column layout */
+    position: relative;
+}
+
+ /* General menu styling */
+ .menu {
+     text-align: center;
+     background-color: black;
+     padding: 0.5em;
+     margin: 0.2em 0.5em;
+ } 
+
+ .menu ul {
+     list-style-type: none;
+     padding: 0;
+     margin: 0;
+ }
+
+ .menu li {
+     display: inline-block;
+     position: relative;
+ }
+
+ .menu a {
+     display: block;
+     padding: 1em;
+     text-decoration: none;
+     color: white;
+     font-family: Arial, sans-serif;
+     font-size: large;
+ }
+
+
+ .menu .submenu {
+     display: none;
+     position: absolute;
+     top: 100%;
+     left: 0;
+     background-color: black;
+     width: max-content;
+ }
+
+ .menu .parent:hover .submenu {
+     display: block;
+ }
+
+ .menu .submenu li {
+     display: block;
+ }
+
+ .menu .submenu a {
+     padding: 0.8em;
+     color: white;
+ }
+
+ .menu .submenu a:hover {
+     background: gray;
+ }
+
+ /* Responsive adjustments */
+ @media screen and (max-width: 768px) {
+     .menu ul {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+     }
+
+     .menu li {
+         display: block;
+         width: 100%;
+         text-align: center;
+     }
+
+     .menu a {
+         padding: 1em;
+         width: 100%;
+     }
+
+     .menu .submenu {
+         position: static;
+         display: none;
+         width: 100%;
+     }
+
+     .menu .parent:hover .submenu {
+         display: block;
+     }
+ }
+
+
+@media (min-width: 768px) and (max-width: 1214px) {
+    .menu .submenu {
+            font-size: 12px;
+            text-size-adjust: auto;
+        }
+}
+
+.article-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 4px;
+    display: block;
+}
+
+
+.main-text-on-page {
+    color: black;
+    font-weight: bold;
+}
+.main-text-on-page:hover {
+    color: rgb(5, 182, 5);
+    text-decoration: underline;
+}
+

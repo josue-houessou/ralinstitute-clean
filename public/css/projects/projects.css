@@ -1,0 +1,270 @@
+  .container-essf-research {
+      width: 100%;
+      height: 15vh;
+      background-color: whitesmoke;
+      color: black;
+      padding: 2vw 5vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1vh;
+  }
+
+  .container-essf-research img {
+      height: 15vh;
+  }
+
+  .container-essf-research ul li {
+      font-family: "Source Sans Pro", Arial, "Helvetica Neue", Helvetica, "sans-serif";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 1.5em;
+      list-style-type: none;
+      display: inline-block;
+      margin: 0 2vw 0 0vw;
+      padding-right: 2vw;
+      border-right: 1px solid gray;
+      color: black;
+  }
+
+  .container-essf-research ul li:last-child {
+      border-right: none;
+      /* Remove border from the last list item */
+  }
+
+  .container-essf-research ul li a {
+      text-decoration: none;
+      color: black;
+  }
+
+  .container-essf-research ul li a:hover {
+      border-bottom: 5px solid red;
+  }
+
+  .essf-logo-moto {
+      display: flex;
+  }
+
+  .essf-logo-moto p {
+      margin-top: 9vh;
+      margin-left: 0.5vw;
+  }
+
+  /* Mobile phones - max 600px */
+  @media (max-width: 600px) {
+      .container-essf-research {
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: flex-start;
+          height: auto;
+          padding: 2vh 4vw;
+      }
+
+      .container-essf-research ul li {
+          border-right: none;
+      }
+
+      .essf-logo-moto {
+          display: none;
+          /* Hide ESSF logo and motto */
+      }
+
+      .rali-logo {
+          height: 8vh;
+          align-self: flex-start;
+      }
+
+      .nav-links {
+          display: flex;
+          flex-direction: column;
+          gap: 1vh;
+          width: 65%;
+          padding-top: 0.5vh;
+      }
+
+      .nav-links li {
+          display: block;
+          width: 100%;
+          text-align: left;
+          border: none;
+          margin: 0;
+      }
+
+      .nav-links li a {
+          display: block;
+          padding: 1vh;
+          font-size: 1.1em;
+          text-decoration: none;
+          color: black;
+          border-bottom: 1px solid lightgray;
+      }
+
+      .nav-links li:last-child a {
+          border-bottom: none;
+      }
+
+      .nav-links li a:hover {
+          background-color: #f3f3f3;
+          border-bottom: 2px solid red;
+      }
+  }
+
+  /* Tablets and big phones - 601px to 1024px */
+  @media (min-width: 601px) and (max-width: 1024px) {
+      .container-essf-research {
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          padding: 2vh 4vw;
+          height: auto;
+          flex-wrap: wrap;
+      }
+
+      .container-essf-research ul li {
+          border-right: none;
+      }
+
+      .essf-logo-moto {
+          flex-direction: column;
+          align-items: center;
+          width: 25%;
+      }
+
+      .essf-logo-moto p {
+          display: none;
+          /* Remove motto for space */
+      }
+
+      .rali-logo {
+          height: 10vh;
+          width: auto;
+      }
+
+      .nav-links {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          width: 40%;
+          padding: 0;
+          margin: 0 auto;
+      }
+
+      .nav-links li {
+          display: block;
+          margin: 1vh 0;
+          text-align: center;
+      }
+
+      .nav-links li a {
+          font-size: 1.2em;
+          text-decoration: none;
+          color: black;
+          border-bottom: 1px solid lightgray;
+          padding-bottom: 0.5vh;
+      }
+
+      .nav-links li:last-child a {
+          border-bottom: none;
+      }
+
+      .nav-links li a:hover {
+          border-bottom: 2px solid red;
+      }
+  }
+
+  
+
+  /********************************************************************/
+
+  /****** INTRO ENDS HERE ********/
+  body {
+      background-color: #f8f9fa;
+
+  }
+
+  .pagetitle {
+      font-family: 'Trebuchet MS', sans-serif;
+      font-weight: 800;
+      font-size: 2.5rem;
+      /* Bigger font size */
+      color: rgb(51, 51, 51);
+      padding-left: 1vw;
+      margin-top: 10px;
+      text-align: left;
+  }
+
+  .project-cards {
+      max-width: 1200px;
+      margin: auto;
+  }
+
+  .card {
+      transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+
+   /******* AFTER INTRO *******/
+   header {
+       margin-bottom: 0;
+   }
+
+   .container-essf-research {
+       width: 100%;
+       height: 15vh;
+       background-color: whitesmoke;
+       color: black;
+       padding: 2vw 5vw;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       margin-bottom: 1vh;
+   }
+
+   .container-essf-research img {
+       height: 15vh;
+   }
+
+   .container-essf-research ul li {
+       font-family: "Source Sans Pro", Arial, "Helvetica Neue", Helvetica, "sans-serif";
+       font-style: normal;
+       font-weight: 700;
+       font-size: 1.5em;
+       list-style-type: none;
+       display: inline-block;
+       margin: 0 2vw 0 0vw;
+       padding-right: 2vw;
+       border-right: 1px solid gray;
+       color: black;
+   }
+
+   .container-essf-research ul li:last-child {
+       border-right: none;
+       /* Remove border from the last list item */
+   }
+
+   .container-essf-research ul li a {
+       text-decoration: none;
+       color: black;
+   }
+
+   .container-essf-research ul li a:hover {
+       border-bottom: 5px solid yellow;
+   }
+
+   .essf-logo-moto {
+       display: flex;
+   }
+
+   .essf-logo-moto p {
+       margin-top: 9vh;
+       margin-left: 0.5vw;
+   }
+
+
+
+

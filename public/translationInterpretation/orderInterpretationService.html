@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interpretation Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main.css"> <!-- Header / Footer Styles -->
+    <link rel="stylesheet" href="/css/translationInterpretation/orderInterpretationService.css"> <!-- Home Page Specific Styles -->
+</head>
+
+<body>
+
+    <div id="header"></div> <!-- Header will be loaded here -->
+
+    <header class="forHeader" class="text-white text-center py-4">
+        <center>
+            <h1>Professional Interpretation Services</h1>
+        </center>
+        <!--<p>Your gateway to seamless communication.</p>-->
+    </header>
+    
+    <main>
+        <section class="container my-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="generic-title">Order Our Services</h2>
+                    <p>Fill out the form below to place an order for interpretation services. We provide high-quality
+                        interpretation for various needs, including business meetings, conferences, and personal
+                        communication.</p>
+                    <form id="orderForm">
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label"><i class="fas fa-user"></i> Full Name</label>
+                            <input type="text" id="fullName" class="form-control" placeholder="Enter your full name"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label"><i class="fas fa-tools"></i> Email</label>
+                            <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="languagePair" class="form-label"><i class="fas fa-globe"></i> Language Pair</label>
+                            <select id="languagePair" class="form-select" required>
+                                <option value="" disabled selected>Select Language Pair</option>
+                                <option value="English-French">English to French</option>
+                                <option value="French-English">French to English</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="serviceType" class="form-label"><i class="fas fa-tools"></i> Service Type</label>
+                            <select id="serviceType" class="form-select" required>
+                                <option value="" disabled selected>Type the event here</option>
+                                <option value="conference">Conference Interpreting</option>
+                                <option value="over-the-phone">Over-the-phone Interpreting (OPI)</option>
+                                <option value="video-remote">Video-remote Interpreting (VRI)</option>
+                                <option value="onsite">Onsite (Consecutive and Simultaneous)</option>
+                                <option value="whisper">Whisper Interpreting</option>
+                                <option value="escort">Escort/Travel Interpreting</option>
+                                <option value="others">Others (Please specify in the textarea below)</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="eventDetails" class="form-label"><i class="fas fa-bullseye"></i> Specify the type of
+                                the event here (If it is not
+                                included in the above list)</label>
+                            <textarea id="eventDetails" class="form-control" rows="5"
+                                placeholder="Describe the event, location, and other relevant details"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="eventDetails" class="form-label"><i class="fas fa-microphone-alt"></i> Event
+                                Details</label>
+                            <textarea id="eventDetails" class="form-control" rows="5"
+                                placeholder="Describe the event, location, and other relevant details"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="uploadDocument" class="form-label"><i class="fas fa-upload"></i> Upload Additional
+                                Documents (optional)</label>
+                            <input type="file" id="uploadDocument" class="form-control" accept=".pdf, .doc, .docx">
+                            <small class="text-muted">Attach any relevant document to help us better understand your
+                                requirements.</small>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Submit Order</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="generic-title">Order Summary</h3>
+                    <div id="orderSummary" class="border p-3 rounded bg-light">
+                        <p><strong>Service Type:</strong> <span id="summaryServiceType">Not selected</span></p>
+                        <p><strong>Language Pair:</strong> <span id="summaryLanguagePair">Not selected</span></p>
+                        <p><strong>Event Details:</strong> <span id="summaryEventDetails">No details provided</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div> <!-- Footer will be loaded here -->
+
+    <script src="/scripts/index.js"></script> <!-- Home Page JS -->
+    <script src="/scripts/global.js"></script> <!-- For Loading Header/Footer -->
+</body>
+
+</html>

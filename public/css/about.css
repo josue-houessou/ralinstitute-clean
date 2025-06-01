@@ -1,0 +1,32 @@
+main {
+    margin: 0 1.5vw 0 1.5vw;
+}
+
+#principles-container {
+    background: none;
+    color: black;
+}
+
+/* Hide inserted images by default */
+.principle-image {
+    display: none;
+}
+
+/* Show inserted images on screens up to 991px (tablets and phones) */
+@media (max-width: 991px) {
+    .principle-image {
+        display: block;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .principle-image img {
+        max-width: 80%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .imagesOriginal{
+        display: none;
+    }
+}

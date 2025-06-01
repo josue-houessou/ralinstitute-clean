@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translation Services Order</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main.css"> <!-- Header / Footer Styles -->
+    <link rel="stylesheet" href="/css/translationInterpretation/orderTranslationService.css"> <!-- Home Page Specific Styles -->
+</head>
+
+<body>
+
+    <div id="header"></div> <!-- Header will be loaded here -->
+
+    <header class="bg-primary text-white text-center py-4">
+        <h1>Professional Translation Services</h1>
+        <p>Your gateway to seamless communication.</p>
+    </header>
+
+    <main>
+        <section class="container my-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="generic-title">Order Our Services</h2>
+                    <p>Fill out the form below to place an order for translation services. We provide high-quality
+                        translation for various needs.</p>
+                    <form id="orderForm">
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label" class=""><i class="fas fa-user"></i> Full Name</label>
+                            <input type="text" id="fullName" class="form-control" placeholder="Enter your full name"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label"><i class="fas fa-tools"></i> Email</label>
+                            <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="originalLanguage" class="form-label"><i class="fas fa-globe"></i> Original
+                                Language</label>
+                            <select id="originalLanguage" class="form-select" required>
+                                <option value="" disabled selected>Select Original Language</option>
+                                <option value="English">English</option>
+                                <option value="French">French</option>
+                                <option value="Spanish">Spanish</option>
+                                <option value="Russian">Russian</option>
+                                <option value="Arabic">Arabic</option>
+                                <option value="Chinese">Chinese</option>
+                            </select>
+                        </div>
+    
+                        <div class="mb-3">
+                            <label for="targetLanguage" class="form-label"><i class="fas fa-language"></i> Target
+                                Language</label>
+                            <select id="targetLanguage" class="form-select" required>
+                                <option value="" disabled selected>Select Target Language</option>
+                                <option value="English">English</option>
+                                <option value="French">French</option>
+                                <option value="Spanish">Spanish</option>
+                                <option value="Russian">Russian</option>
+                                <option value="Arabic">Arabic</option>
+                                <option value="Chinese">Chinese</option>
+                            </select>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="eventDetails" class="form-label"><i class="fas fa-file-alt"></i> Provide details
+                                about your document</label>
+                            <ul>
+                                <li>What is the primary purpose of this document (e.g., legal, academic, personal)?</li>
+                                <li>Are there specific terminologies we should be aware of?</li>
+                                <li>Do you have any formatting requirements or preferences?</li>
+                                <li>Is there a target audience for this translation (e.g., general public, professionals)?
+                                </li>
+                                <li>Are there any specific deadlines for delivery?</li>
+                            </ul>
+                            <textarea id="eventDetails" class="form-control" rows="5"
+                                placeholder="Describe the event, location, and other relevant details"></textarea>
+                        </div>
+                        <!-- Additional Document Upload -->
+                        <div class="mb-4">
+                            <label for="additional-doc" class="form-label"><i class="fas fa-upload"></i>Upload Additional
+                                Document</label>
+                            <input class="form-control" type="file" id="additional-doc">
+                        </div>
+                        <!-- Category Buttons -->
+                        <div class=" mb-4">
+                            <h5><i class="fas fa-folder-open"></i>Category</h5>
+                            <button class="btn btn-primary me-2" id="certified-translator">Certified Translator</button>
+                            <button class="btn btn-outline-primary" id="professional-translator">Professional
+                                Translator</button>
+                        </div>
+                        <!-- Field of Expertise -->
+                        <div class="mb-4">
+                            <h5><i class="fas fa-graduation-cap"></i> Field of Expertise</h5>
+                            <table class="table table-bordered text-center">
+                                <tr class="table-primary">
+                                    <td>Legal</td>
+                                    <td>Medical</td>
+                                </tr>
+                                <tr class="table-secondary">
+                                    <td>Scientific</td>
+                                    <td>Financial</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!-- Translation Duration Buttons -->
+                        <div class=" mb-4">
+                            <h5><i class="fas fa-clock"></i> Duration of translation</h5>
+                            <button class="btn btn-success me-2" id="fast">Fast translation</button>
+                            <button class="btn btn-outline-success" id="standard">Standard translation</button>
+                        </div>
+                        <!-- Delivery Format Radio Button -->
+                        <div class="mb-4">
+                            <h5><i class="fas fa-envelope-open"></i> Delivery Format</h5>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="deliveryFormat" id="same-format">
+                                <label class="form-check-label" for="same-format">
+                                    I need delivery in the same format
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Submit Order</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="generic-title">Order Summary</h3>
+                    <div id="orderSummary" class="border p-3 rounded bg-light">
+                        <p><strong>Category:</strong> <span id="summaryCategory">Not selected</span></p>
+                        <p><strong>Duration:</strong> <span id="summaryDuration">Not selected</span></p>
+                        <p><strong>Expertise:</strong> <span id="summaryExpertise">Not selected</span></p>
+                        <p><strong>Additional Document:</strong> <span id="summaryAdditionalDocument">Not uploaded</span></p>
+                        <p><strong>Delivery Format:</strong> <span id="summaryDeliveryFormat">Not selected</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div> <!-- Footer will be loaded here -->
+
+    <script src="/scripts/index.js"></script> <!-- Home Page JS -->
+    <script src="/scripts/global.js"></script> <!-- For Loading Header/Footer -->
+    <script src="/scripts/translation/orderTranslationService.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

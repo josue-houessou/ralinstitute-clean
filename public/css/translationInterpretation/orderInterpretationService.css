@@ -1,0 +1,95 @@
+     footer {
+         margin-top: 2vh;
+     }
+
+     body {
+         font-family: 'Arial', sans-serif;
+         line-height: 1.6;
+         background-color: #f9f9f9;
+     }
+
+     header {
+         background-size: cover;
+         background-position: center;
+         color: #fff;
+         text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+     }
+
+     .forHeader {
+         background-image: url("/images/interpretation1.jpg");
+         background-color: #cccccc;
+         background-size: cover;
+         background-position: center;
+         color: #fff;
+         height: 400px;
+     }
+
+     .generic-title {
+         font-size: 2.5rem;
+         /* Slightly larger font */
+         font-weight: bold;
+     }
+
+     /* General Title Styling */
+     label {
+         font-size: 1.2rem;
+         /* Slightly larger font */
+         font-weight: bold;
+         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+         /* Subtle shadow for depth */
+         margin-bottom: 0.5rem;
+         /* Space below */
+         display: inline-block;
+         /* Ensure proper alignment */
+     }
+
+     /* Underline Effect */
+     label::after {
+         content: '';
+         display: block;
+         width: 50%;
+         height: 3px;
+         background: linear-gradient(to right, #007bff, #ffc107);
+         /* Gradient underline */
+         margin-top: 4px;
+     }
+
+     /* Optional: Add Icons */
+     label span.icon {
+         font-size: 1rem;
+         color: #ffc107;
+         /* Secondary color for contrast */
+         margin-right: 8px;
+     }
+
+     /* Add Hover Effect */
+     label:hover {
+         color: #0056b3;
+         /* Darker shade on hover */
+         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+         cursor: pointer;
+         /* Makes it clickable */
+     }
+
+     h1 {
+         font-size: 2.5rem;
+         margin-bottom: 0.5rem;
+     }
+
+     form .form-control,
+     form .form-select {
+         border-radius: 0.5rem;
+     }
+
+     button {
+         background-color: #007bff;
+         color: #fff;
+         border: none;
+         transition: background-color 0.3s;
+     }
+
+     button:hover {
+         background-color: #0056b3;
+     }
+
+     

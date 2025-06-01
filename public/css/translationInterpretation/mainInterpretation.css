@@ -1,0 +1,147 @@
+   .pagetitle {
+       font-family: 'Trebuchet MS', sans-serif;
+       font-weight: 800;
+       font-size: 2rem;
+       /* Slightly larger font for emphasis */
+       color: white;
+       margin: 0 0 10px 0;
+       /* Add some spacing below the title */
+   }
+
+   /* General Styling for the lsit of Conferences Interpreting */
+   .list-container {
+       display: flex;
+       justify-content: space-between;
+       gap: 5px;
+       /* Further reduced gap */
+   }
+
+   .list-left,
+   .list-right {
+       list-style-type: none;
+       padding: 0;
+       margin: 0;
+       flex: 1;
+       /* Ensures even spacing */
+   }
+
+   /* Responsive adjustments for smaller screens */
+   @media (max-width: 768px) {
+       .list-container {
+           flex-direction: column;
+           align-items: flex-start;
+           gap: 10px;
+           /* Adds space when stacked */
+       }
+
+       .list-left,
+       .list-right {
+           margin-bottom: 5px;
+       }
+   }
+
+   /* Styling for the Conference Cards */
+   .services-section {
+       background-color: #f9f9f9;
+   }
+
+   .card {
+       border: none;
+       border-radius: 10px;
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+       transition: transform 0.3s;
+   }
+
+   .card:hover {
+       transform: translateY(-10px);
+   }
+
+   .card-body {
+       padding: 30px;
+   }
+
+   .card-title {
+       font-size: 1.5rem;
+       font-weight: 600;
+       margin-bottom: 15px;
+   }
+
+   .card-text {
+       font-size: 1rem;
+       color: #666;
+       margin-bottom: 20px;
+   }
+
+   .btn-primary {
+       background-color: #007bff;
+       border: none;
+       border-radius: 50px;
+       padding: 10px 20px;
+       font-size: 1rem;
+       transition: background-color 0.3s;
+   }
+
+   .btn-primary:hover {
+       background-color: #0056b3;
+   }
+
+   @media (max-width: 768px) {
+       .card-body {
+           padding: 20px;
+       }
+
+       .card-title {
+           font-size: 1.25rem;
+       }
+
+       .card-text {
+           font-size: 0.9rem;
+       }
+
+       .btn-primary {
+           font-size: 0.9rem;
+           padding: 8px 16px;
+       }
+   }
+
+
+
+   /* Testimonial Cards */
+   .testimonial-card {
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+       border-radius: 8px;
+       overflow: hidden;
+       margin: 15px 0;
+   }
+
+   .testimonial-card img {
+       border-radius: 50%;
+       width: 80px;
+       height: 80px;
+       object-fit: cover;
+   }
+
+   .testimonial-card h5 {
+       margin-top: 10px;
+       font-size: 1.1rem;
+       font-weight: bold;
+   }
+
+   .testimonial-card p {
+       font-size: 0.9rem;
+       color: #555;
+   }
+
+   .btn-order {
+       background-color: #007bff;
+       color: #fff;
+       padding: 12px 30px;
+       border-radius: 5px;
+       font-size: 1.2rem;
+       text-transform: uppercase;
+   }
+
+   .btn-order:hover {
+       background-color: #0056b3;
+       color: #fff;
+   }

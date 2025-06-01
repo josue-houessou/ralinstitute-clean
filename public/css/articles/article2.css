@@ -1,0 +1,71 @@
+     main {
+         font-family: 'Poppins', sans-serif;
+         line-height: 1.6;
+         font-size: 20px;
+         font-style: normal;
+         font-weight: 400;
+         background-color: #fff;
+         color: rgb(0, 0, 0);
+         padding: 20px;
+     }
+
+     
+    .titleArticle {
+         font-family: ReithSans, Arial, Helvetica, sans-serif;
+         font-style: normal;
+         font-weight: 700;
+         font-size: 44px;
+         color: rgb(20, 20, 20);
+         line-height: 48px;
+    }
+
+    .authorName {
+        font-family: ReithSans, Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        color: rgb(20, 20, 20);
+        line-height: 22px;
+    }
+
+    .hook {
+        font-family: Helvetica, Arial, sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        color: rgb(20, 20, 20);
+        line-height: 22px;
+        }
+    
+    p {
+        font-family: Helvetica, Arial, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        color: rgb(20, 20, 20);
+        line-height: 28px;
+    }
+
+     .card {
+         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+         border: none;
+     }
+
+     .card-text {
+         font-size: 0.9rem;
+         color: #555;
+         padding: 0;
+     }
+
+         .card-body {
+             padding: 0.25rem;
+         }
+
+     .gallery h2 {
+         color: rgb(20, 20, 20);
+     }
+
+     .gallery .row {
+         margin-bottom: 2vw;
+         /* Margin adjusts based on viewport width */
+     }

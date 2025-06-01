@@ -1,0 +1,193 @@
+       main {
+        padding: 15px;
+       }
+
+        .hero {
+            background-color: #f9f9f9;
+            color: black;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .hero img {
+            width: 100%;
+            max-width: 500px;
+            /* Prevents the image from exceeding a reasonable size */
+            height: auto;
+            /* Maintains aspect ratio */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            /* Adds a subtle shadow for visual emphasis */
+        }
+
+        .hero h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .hero h2 {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+      
+        @media (max-width: 768px) {
+            .hero {
+                text-align: center;
+            }
+
+            .hero img {
+                margin: 0 auto;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .hero h2 {
+                font-size: 1rem;
+            }
+
+            .hero p {
+                font-size: 0.9rem;
+            }
+        }
+
+        .titleArticle{
+            font-family: ReithSans, Arial, Helvetica, sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 44px;
+            color: rgb(20, 20, 20);
+            line-height: 48px;
+        }
+
+        .authorName {
+            font-family: ReithSans, Arial, Helvetica, sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            color: rgb(20, 20, 20);
+            line-height: 22px;
+        }
+
+        .hook {
+            font-family: Helvetica, Arial, sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            color: rgb(20, 20, 20);
+            line-height: 22px;
+        }
+
+                .hook2 {
+                    font-family: Helvetica, Arial, sans-serif;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 16px;
+                    color: rgb(20, 20, 20);
+                    line-height: 22px;
+                    text-decoration: underline;
+                }
+        p {
+            font-family: Helvetica, Arial, sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            color: rgb(20, 20, 20);
+            line-height: 28px;
+        }
+
+        .section-heading {
+            margin: 40px 0 20px;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            border-bottom: 2px solid rgb(20, 20, 20);;
+            padding-bottom: 5px;
+            font-family: Helvetica, Arial, sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: rgb(20, 20, 20);
+            line-height: 22px;
+        }
+
+        .video-section-heading {
+            margin: 40px 0 20px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #5a5a5a;
+            text-transform: uppercase;
+            padding-bottom: 5px;
+        }
+
+        .gallery img {
+            width: 100%;
+            /* Ensures images fit within their container */
+            height: 700px;
+            /* Maintains aspect ratio */
+            border-radius: 8px;
+            /* Optional: adds rounded corners */
+        }
+
+        .gallery .centered-img img {
+            width: 75%;
+            /* Matches width to the first two images */
+            margin: 0 auto;
+            /* Centers the image horizontally */
+            display: block;
+            /* Allows centering with margin */
+            height: 1200px;
+            /* Prevents excessive height and adjusts proportions */
+            object-fit: cover;
+            /* Ensures important parts are not cut off */
+        }
+
+        .caption {
+            text-align: center;
+            font-family: ReithSans, Arial, Helvetica, sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            color: rgb(84, 86, 88);
+            line-height: 18px;
+        }
+
+
+
+        .video-container {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .video-container video {
+            width: 80%;
+            max-width: 800px;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .video-container video {
+                width: 100%;
+            }
+        }
+
+        .title {
+            text-decoration: underline;
+        }
+
+        #topic1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: normal;
+            font-weight: 600;
+        }
+
+        #topic2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: normal;
+            font-weight: 600;
+            color: #333;
+        }

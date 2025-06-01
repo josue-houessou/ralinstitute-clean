@@ -1,0 +1,244 @@
+/* BODY DESIGN STARTS HERE*/
+body {
+    background-color: #F5F5DC;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* General container styles */
+.container {
+    background-color: #333;
+    padding: 20px;
+    color: white;
+    font-family: "PT Sans Narrow", Arial, sans-serif;
+    margin-bottom: 3vh;
+}
+
+/* Card styles */
+.card {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    height: 350px;
+    background: #444;
+    margin-bottom: 20px;
+}
+
+.card img {
+    width: 45%;
+    height: 300px;
+    margin-right: 20px;
+}
+
+.card-content {
+    flex: 1;
+}
+
+.card-title {
+    font-size: 2em;
+    font-weight: 700;
+    padding-left: 3vw;
+}
+
+.card-text {
+    font-size: 1.5em;
+    line-height: 1.3;
+}
+
+/* Top container styles */
+.container-top {
+    background-color: #333;
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 13vh;
+}
+
+.container-top p {
+    font-size: 18px;
+}
+
+.left-side img {
+    width: 100%;
+    height: 80vh;
+}
+
+.right-side {
+    padding: 10px;
+}
+
+.translation-title {
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.lists-container {
+    display: flex;
+    margin: 1vh 0;
+    flex-wrap: wrap;
+    /* Allows lists to wrap on smaller screens */
+    justify-content: center;
+    /* Centers the lists within the container */
+}
+
+.right-ul-list {
+    font-weight: 700;
+    font-size: 1.1em;
+    margin: 0 3vw;
+    list-style-type: disc;
+    /* Optional: Adds bullet points for better readability */
+    padding-left: 20px;
+    /* Adds indentation for list items */
+}
+
+/* Add spacing around each list item */
+.right-ul-list li {
+    margin-bottom: 30px;
+    /* Adjust this value as needed */
+    padding-left: 5px;
+    /* Optional: Adds some padding for better visual separation */
+}
+
+/* Optional: Remove bottom margin from the last list item to prevent extra space */
+.right-ul-list li:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 1024px) {
+
+  .container-top {
+    flex-direction: column;
+    align-items: center;
+    padding: 2vh 4vw;
+  }
+
+  .left-side img {
+    height: auto;
+    width: 100%;
+    margin-bottom: 2vh;
+  }
+
+  .right-side {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .lists-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right-ul-list {
+    width: 90%;
+    margin: 2vh auto;
+    padding-left: 30px;
+  }
+
+  .right-ul-list li {
+    font-size: 1em;
+    margin-bottom: 12px;
+  }
+
+  .translation-title {
+    font-size: 1.8em;
+    margin-bottom: 1vh;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .right-side p {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+
+  .translation-title {
+    font-size: 1.5em;
+  }
+
+  .right-ul-list {
+    padding-left: 20px;
+    font-size: 0.95em;
+  }
+
+  .right-ul-list li {
+    margin-bottom: 8px;
+  }
+}
+
+.service-links ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 3vh auto;
+    width: 90%;
+    max-width: 800px;
+}
+
+.service-links li a {
+    text-decoration: underline;
+    color: #007bff;
+    /* Bootstrap-style blue */
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.service-links li a:hover {
+    color: #0056b3;
+    /* darker blue on hover */
+}
+
+/* Responsive behavior for tablets and mobile phones */
+@media screen and (max-width: 768px) {
+    .service-links ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh;
+    }
+
+    .service-links li {
+        text-align: center;
+    }
+}
+
+.descriptionTranslationServices {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.titleTranslationServices {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 700;
+}
+
+/* Change title color on hover */
+.titleTranslationServices {
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.titleTranslationServices:hover {
+    color: #007BFF;
+    /* Add your preferred color here */
+}
+
+/* Hover effect for the entire div */
+.service-link:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+    /* Light blue background on hover */
+    transition: background-color 0.3s ease;
+}
+
+footer {
+    margin-top: 5vh;
+}

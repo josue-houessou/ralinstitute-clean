@@ -1,0 +1,5 @@
+node_modules/
+public/videos/
+public/images/prospectus.pdf
+*.mp4
+*.pdf

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - RALI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main.css"> <!-- Header / Footer Styles -->
+    <link rel="stylesheet" href="/css/conferences.css"> <!-- Home Page Specific Styles -->
+</head>
+
+<body>
+    <header>
+        <nav class="container-essf-research">
+            <div class="essf-logo-moto">
+                <img src="/images/essflogo.jpg" alt="" class="essf-logo">
+                <p><i>Connecting people to reshape the future!</i></p>
+            </div>
+    
+            <ul class="nav-links">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/studyatessf.html">Study at ESSF</a></li>
+                <li><a href="/about.html">About</a></li>
+            </ul>
+    
+            <img src="/images/rali-logo.png" alt="" class="rali-logo">
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="pagetitle">Conferences</div>
+            <h1>Join Our Conferences</h1>
+            <p>Where Researchers Collaborate, Innovate, and Inspire.</p>
+        </div>
+    </section>
+    
+    <!-- About Conferences Section -->
+    <section class="about-conferences">
+        <div class="container">
+            <h2 class="section-title">About Our Conferences</h2>
+            <p class="text-center">Our institute organizes international conferences bringing together experts from
+                diverse fields. These events foster collaboration and knowledge sharing to address critical global challenges.</p>
+        </div>
+    </section>
+    
+    <!-- Research Fields Section -->
+    <section class="research-fields">
+        <div class="container">
+            <h2 class="section-title">Research Fields</h2>
+            <div class="row g-4">
+                <!-- Government Studies -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Government Studies">
+                        <div class="card-body">
+                            <h5 class="card-title">Government Studies</h5>
+                            <p class="card-text">The Cotonou Conference on State Governance.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#governmentModal">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Business & Economics -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Technology Gap">
+                        <div class="card-body">
+                            <h5 class="card-title">Bridging the Technology Gap</h5>
+                            <p class="card-text">Africa and the global technological warfare.
+                            </p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#technologyModal">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- African Studies -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="African Studies">
+                        <div class="card-body">
+                            <h5 class="card-title">African Studies</h5>
+                            <p class="card-text">The Food Security Conference.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#africanModal">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modals -->
+        <!-- Government Studies Modal -->
+        <div class="modal fade" id="governmentModal" tabindex="-1" aria-labelledby="governmentModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="governmentModalLabel">Government Studies Conference</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p><strong>Date:</strong> November 2026</p>
+                        <p><strong>Location:</strong> Conference Hall A</p>
+                        <p><strong>Participants:</strong> Keynote speakers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Technology Gap Modal -->
+        <div class="modal fade" id="technologyModal" tabindex="-1" aria-labelledby="technologyModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="technologyModalLabel">Bridging the Technology Gap</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p><strong>Date:</strong> July 2026</p>
+                        <p><strong>Location:</strong> Auditorium B</p>
+                        <p><strong>Participants:</strong> Industry leaders and tech experts.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- African Studies Modal -->
+        <div class="modal fade" id="africanModal" tabindex="-1" aria-labelledby="africanModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="africanModalLabel">African Studies Conference</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p><strong>Date:</strong> February2026</p>
+                        <p><strong>Location:</strong> Cultural Center</p>
+                        <p><strong>Participants:</strong> Renowned historians and cultural researchers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- Call-to-Action Section -->
+    <div class="cta-banner">
+        <div class="container text-center">
+            <h2>Ready to Join Us?</h2>
+            <p>Discover, learn, and make a global impact. Join our next conference and connect with experts worldwide.</p>
+            <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#registerModal">Register
+                Now</button>
+        </div>
+    </div>
+    
+    <!-- Modal for Registration -->
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registerModalLabel">Conference Registration</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="profession" class="form-label">Profession</label>
+                            <input type="text" class="form-control" id="profession" placeholder="Your Profession">
+                        </div>
+                        <div class="mb-3">
+                            <label for="reason" class="form-label">Why Do You Want to Join?</label>
+                            <textarea class="form-control" id="reason" rows="3"
+                                placeholder="Tell us briefly why you want to be part of this conference."
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer"></div> <!-- Footer will be loaded here -->
+
+    <script src="/scripts/index.js"></script> <!-- Home Page JS -->
+    <script src="/scripts/global.js"></script> <!-- For Loading Header/Footer -->
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

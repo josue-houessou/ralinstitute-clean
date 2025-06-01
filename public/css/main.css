@@ -1,0 +1,658 @@
+body {
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+.crimson-text-bold-italic {
+    font-family: "Crimson Text", serif;
+    font-weight: 700;
+    font-size: 1.2em;
+    color: white;
+}
+
+/* General styles */
+
+.responsive-band {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    /* Adjust height as needed */
+}
+
+.red-section {
+    background-color: red;
+    width: 66.67%;
+    /* Two-thirds of the width */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.black-section {
+    background-color: black;
+    width: 33.33%;
+    /* One-third of the width */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    padding: 0 10px;
+}
+
+.title {
+    color: white;
+    font-size: 16px;
+    /* Adjust font size */
+}
+
+.menu-button {
+    color: white;
+    cursor: pointer;
+}
+
+.signup {
+    font-size: 14px;
+    /* Adjust font size */
+    cursor: pointer;
+}
+
+.search-icon {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .responsive-band {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .red-section,
+    .black-section {
+        width: 100%;
+        height: 50px;
+        /* Adjust height for smaller screens */
+    }
+
+    .red-section {
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+}
+
+
+   /*THE STYLE FOR THE HEADER STARTS HERE*/
+   .front-div {
+       background-color: rgb(227, 6, 19);
+       /* Blue color for visibility */
+       width: 100%;
+       height: 30vh;
+       /* Full height of the viewport */
+       position: relative;
+       z-index: 1;
+       /* Front div on top */
+       opacity: 0.85;
+   }
+
+   .overlay-content {
+       position: relative;
+       top: 0;
+       right: 0;
+       /* Adjust the position as needed */
+       width: 0;
+       background-color: #333;
+       /* Text color */
+       z-index: 3;
+   }
+
+   .back-div {
+       position: absolute;
+       top: 0;
+       /* Stick it to the top */
+       left: 10vw;
+       /* Keep this if necessary */
+       z-index: 0;
+       /* Keeps it behind */
+   }
+
+   .back-div img {
+       width: 10vw;
+       height: 20vh;
+       object-fit: cover;
+       object-position: bottom;
+       margin-top: 0 !important;
+       /* Ensure no top margin */
+       padding-top: 0 !important;
+       /* Ensure no padding */
+   }
+
+   .back-div p {
+       padding-top: 3.5vh;
+       color: black;
+       font-weight: 800;
+   }
+
+   #heading {
+       padding: 3vh 3vw;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+   }
+
+   .logo {
+       width: 12vw;
+       height: auto;
+       margin-left: 2vw;
+   }
+
+   .institute-info {
+       display: flex;
+       align-items: center;
+   }
+
+   .nav-links {
+       list-style: none;
+       display: flex;
+       margin: 0;
+       padding: 0;
+       gap: 1vw;
+   }
+
+   .nav-link {
+       margin-right: 20px;
+       text-decoration: none;
+       color: #fff;
+       /* White text color */
+       font-weight: bold;
+       font-size: 18px;
+   }
+
+   .hamburger {
+       display: none;
+       cursor: pointer;
+       font-size: 24px;
+       color: white;
+       background: #222;
+       padding: 10px;
+       border-radius: 5px;
+       z-index: 1001;
+       /* Ensures it's above the menu */
+   }
+
+   .nav-menu {
+       display: none;
+   }
+
+   /*language switcher */
+   .switch {
+       position: relative;
+       /* Change to relative to position it correctly */
+       display: flex;
+       align-items: center;
+       margin-left: 20px;
+       /* Adjust margin as needed */
+   }
+
+   .switch>span {
+       position: absolute;
+       top: 10px;
+       pointer-events: none;
+       font-family: 'Helvetica', Arial, sans-serif;
+       font-weight: bold;
+       font-size: 12px;
+       text-transform: uppercase;
+       text-shadow: 0 1px 0 rgba(0, 0, 0, .06);
+       width: 50%;
+       text-align: center;
+   }
+
+   /*inside the second button*/
+   input.check-toggle-round-flat:checked~.off {
+       color: #555;
+   }
+
+   /* first button when off*/
+   input.check-toggle-round-flat:checked~.on {
+       color: #fff;
+   }
+
+   /*inside the fisrt button*/
+   .switch>span.on {
+       left: 0;
+       padding-left: 2px;
+       color: #555;
+   }
+
+   /*second button when off*/
+   .switch>span.off {
+       right: 0;
+       padding-right: 4px;
+       color: #fff;
+   }
+
+   .check-toggle {
+       position: absolute;
+       visibility: hidden;
+   }
+
+   .check-toggle+label {
+       display: block;
+       position: relative;
+       cursor: pointer;
+       outline: none;
+       -webkit-user-select: none;
+       -moz-user-select: none;
+       -ms-user-select: none;
+       user-select: none;
+   }
+
+   input.check-toggle-round-flat+label {
+       padding: 2px;
+       width: 97px;
+       height: 35px;
+       background-color: black;
+       -webkit-border-radius: 60px;
+       -moz-border-radius: 60px;
+       -ms-border-radius: 60px;
+       -o-border-radius: 60px;
+       border-radius: 60px;
+   }
+
+   input.check-toggle-round-flat+label:before,
+   input.check-toggle-round-flat+label:after {
+       display: block;
+       position: absolute;
+       content: "";
+   }
+
+   input.check-toggle-round-flat+label:before {
+       top: 2px;
+       left: 2px;
+       bottom: 2px;
+       right: 2px;
+       background-color: black;
+       -webkit--moz-border-radius: 60px;
+       -ms-border-radius: 60px;
+       -o-border-radius: 60px;
+       border-radius: 60px;
+   }
+
+   /*cursor when on second button */
+   input.check-toggle-round-flat+label:after {
+       top: 4px;
+       left: 4px;
+       bottom: 4px;
+       width: 48px;
+       background-color: #fff;
+       -webkit-border-radius: 52px;
+       -moz-border-radius: 52px;
+       -ms-border-radius: 52px;
+       -o-border-radius: 52px;
+       border-radius: 52px;
+       -webkit-transition: margin 0.2s;
+       -moz-transition: margin 0.2s;
+       -o-transition: margin 0.2s;
+       transition: margin 0.2s;
+   }
+
+   input.check-toggle-round-flat:checked+label:after {
+       margin-left: 44px;
+   }
+
+   .OpenBtn {
+       background: #f1f1f1;
+       border: none;
+       padding: 10px 15px;
+       font-size: 20px;
+       cursor: pointer;
+   }
+
+   .OpenBtn:hover {
+       background: #bbb;
+   }
+
+   .Overlay {
+       height: 100%;
+       width: 100%;
+       display: none;
+       position: fixed;
+       z-index: 1;
+       top: 0;
+       left: 0;
+       background-color: rgb(0, 0, 0);
+       background-color: rgba(0, 0, 0, 0.9);
+       opacity: 2;
+   }
+
+   .Overlay-content {
+       position: relative;
+       top: 46%;
+       width: 80%;
+       text-align: center;
+       margin-top: 30px;
+       margin: auto;
+   }
+
+   .Overlay .Closebtn {
+       position: absolute;
+       top: 20px;
+       right: 45px;
+       font-size: 60px;
+       cursor: pointer;
+       color: white;
+   }
+
+   .Overlay .closebtn:hover {
+       color: #ccc;
+   }
+
+   .Overlay input[type=text] {
+       padding: 15px;
+       font-size: 17px;
+       border: none;
+       float: left;
+       width: 80%;
+       background: white;
+   }
+
+   .Overlay input[type=text]:hover {
+       background: #f1f1f1;
+   }
+
+   .Overlay button {
+       float: left;
+       width: 20%;
+       padding: 15px;
+       background: #ddd;
+       font-size: 17px;
+       border: none;
+       cursor: pointer;
+   }
+
+   .Overlay button:hover {
+       background: #bbb;
+   }
+
+   .SearchHero {
+       background: #333333;
+       /* fallback for old browsers */
+       background: -webkit-linear-gradient(to right, #dd1818, #333333);
+       /* Chrome 10-25, Safari 5.1-6 */
+       background: linear-gradient(to right, #dd1818, #333333);
+       /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+       color: #ffffff;
+       padding: 20px;
+   }
+
+   .SearchHero p {
+       font-size: 13px;
+   }
+
+   /* End of the design of the switch*/
+
+   .essf-name {
+       font-family: FuturaBT-Medium, "Josefin Sans", arial, sans-serif;
+       font-style: normal;
+       font-weight: 700;
+       font-size: 24px;
+       color: #ffffff;
+       line-height: 26.4px;
+   }
+
+   /* Styles for the search overlay */
+   .overlay {
+       height: 100%;
+       width: 0;
+       position: fixed;
+       z-index: 100;
+       top: 0;
+       left: 0;
+       background-color: rgb(155, 4, 4);
+       overflow-x: hidden;
+       transition: 0.5s;
+   }
+
+   .overlay-content {
+       position: relative;
+       top: 25%;
+       width: 100%;
+       text-align: center;
+       margin-top: 30px;
+   }
+
+   .overlay-content input[type="text"] {
+       padding: 15px;
+       font-size: 17px;
+       border: none;
+       width: 80%;
+       background: rgb(15, 6, 6);
+       color: #fff;
+   }
+
+   .overlay-content button {
+       padding: 15px;
+       font-size: 17px;
+       background: #ddd;
+       color: black;
+       border: none;
+       cursor: pointer;
+   }
+
+   .overlay-content button:hover {
+       background: #bbb;
+   }
+
+   .closebtn {
+       position: absolute;
+       top: 20px;
+       right: 45px;
+       font-size: 60px;
+       cursor: pointer;
+       color: white;
+   }
+
+   .openBtn {
+       background: none;
+       border: none;
+       color: white;
+       font-size: 24px;
+       cursor: pointer;
+       margin-left: 20px;
+   }
+
+   .openBtn:hover {
+       color: #ddd;
+   }
+
+   /*INTRO'S DESIGN ENDS HERE!*/
+
+/* Responsiveness */
+@media screen and (max-width: 1024px) {
+
+    .essf-name,
+    .institute-info span {
+        display: none;
+        /* Suppression du nom complet */
+    }
+
+    .institute-info img {
+        width: 8vw;
+        /* Ajustement de la taille du logo RALI */
+    }
+
+    .institute-info::after {
+        content: "RALI";
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+        margin-left: 10px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+                .hamburger {
+                    display: block;
+                    position: relative;
+                }
+
+                .nav-menu {
+                    display: none;
+                    /* Initially hidden */
+                    position: absolute;
+                    top: 60px;
+                    left: 0;
+                    background: #333;
+                    width: 100%;
+                    text-align: center;
+                    padding: 10px 0;
+                    flex-direction: column;
+                    transition: all 0.3s ease-in-out;
+                    z-index: 1000;
+                }
+
+                /* Show menu when active */
+                .nav-menu.active {
+                    display: flex;
+                }
+        
+                .nav-menu li {
+                    padding: 10px;
+                }
+    
+                .nav-menu a {
+                    color: white;
+                    text-decoration: none;
+                    display: block;
+                }
+
+    .search-icon {
+        display: block;
+        font-size: 20px;
+        color: white;
+        cursor: pointer;
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .institute-info img {
+        width: 10vw;
+        /* Réduction du logo */
+    }
+
+    .hamburger {
+        font-size: 20px;
+    }
+
+    .switch {
+        margin-left: 10px;
+    }
+
+    .nav-menu {
+        top: 50px;
+    }
+}
+
+
+/*INTRO'S DESIGN ENDS HERE!*/
+
+
+
+/*DESIGN OF THE FOOTER*/
+footer {
+    background: rgb(43, 42, 42);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+footer button {
+    border: none;
+    padding: 2vh 3vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2em;
+}
+
+#signup-btn {
+    color: black;
+    text-decoration: none;
+}
+
+.rights-reserved {
+    margin-top: 3vh;
+}
+
+
+footer .footer-menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer .footer-menu li {
+    padding: 12px;
+    margin: 0 10px;
+    
+}
+
+footer .footer-menu li:last-child {
+    border-right: none;
+}
+
+footer .footer-menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Icon colors */
+.text-facebook {
+    color: #1877F2;
+    /* Facebook blue */
+}
+
+.text-twitter {
+    color: #1DA1F2;
+    /* Twitter/X blue */
+}
+
+.text-instagram {
+    color: #C13584;
+    /* Instagram pink */
+}
+
+.text-youtube {
+    color: #FF0000;
+    /* YouTube red */
+}
+
+.text-whatsapp {
+    color: #25D366;
+    /* WhatsApp green */
+}
+
+/* Hover effect */
+.social-link {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0.8;
+}
+
+.social-link:hover {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+/* Footer design ends here*/
