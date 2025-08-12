@@ -34,6 +34,9 @@ app.use((err, req, res, next) => {
     res.status(500).send('Something broke!');
 });
 
+// Serve French version
+//app.use('/fr', express.static(path.join(__dirname, 'public', 'fr')));
+
 // Serve frontend
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));

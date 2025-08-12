@@ -1,0 +1,65 @@
+<!--This is the header! The red intro containing the name of the institute and the logos.-->
+<header>
+    <div class="grid-container">
+        <div class="front-div">
+            <div id="heading">
+
+                <span class="essf-name">
+                    <span>ECOLE</span> <br>
+                    <span>SUPERIEURE</span> <br>
+                    <span>SAINTE</span> <br>
+                    <span>FELICITE</span> <br>
+                    <span>(ESSF)</span>
+                </span>
+
+                <div class="institute-info">
+                    <img src="/images/rali-logo.png" alt="Logo RALI" class="logo">
+                    <span class="crimson-text-bold-italic">Research,
+                        Arts & <br> Language Institute</span>
+                </div>
+
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="/index.html" class="nav-link essf-name">Accueil</a></li>
+                        <li><a href="/about.html" class="nav-link essf-name">A Propos</a></li>
+                        <li><a href="/studyatessf.html" class="nav-link essf-name">Etudier à ESSF</a></li>
+                    </ul>
+                </nav>
+
+                <div class="hamburger" onclick="toggle()">☰</div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="/about.html">A Propos</a></li>
+                    <li><a href="#">Etudier à ESSF</a></li>
+                </ul>
+
+                <div class="switch">
+                    <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+                    <label for="language-toggle"></label>
+                    <span class="on">EN</span>
+                    <span class="off">FR</span>
+                </div>
+
+                <button class="openBtn" onclick="openSearch()"><i class="fa fa-search"></i></button>
+                <div id="searchOverlay" class="overlay">
+                    <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                    <div class="overlay-content">
+                        <form action="#">
+                            <input type="text" placeholder="Search..." name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--This is the image of the EESF school!!!-->
+        <div class="back-div">
+            <img src="/images/essflogo.jpg" alt="ESSF Logo">
+            <!--<p>Connecting people to reshape the future!</p> -->
+        </div>
+    </div>
+</header>
+
+
+
