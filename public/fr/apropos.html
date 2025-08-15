@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Proopse de RAL Institute</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main.css"> <!-- Header / Footer Styles -->
+    <link rel="stylesheet" href="/css/about.css"> <!-- Home Page Specific Styles -->
+</head>
+
+<body>
+
+    <div>
+        <header>
+    <div class="grid-container">
+        <div class="front-div">
+            <div id="heading">
+
+                <span class="essf-name">
+                    <span>ECOLE</span> <br>
+                    <span>SUPERIEURE</span> <br>
+                    <span>SAINTE</span> <br>
+                    <span>FELICITE</span> <br>
+                    <span>(ESSF)</span>
+                </span>
+
+                <div class="institute-info">
+                    <img src="/images/rali-logo.png" alt="Logo RALI" class="logo">
+                    <span class="crimson-text-bold-italic">Research,
+                        Arts & <br> Language Institute</span>
+                </div>
+
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="/fr/index.html" class="nav-link essf-name">Accueil</a></li>
+                        <li><a href="/fr/apropos.html" class="nav-link essf-name">A Propos</a></li>
+                        <li><a href="/fr/etudieraessf.html" class="nav-link essf-name">Etudier à ESSF</a></li>
+                    </ul>
+                </nav>
+
+                <div class="hamburger" onclick="toggle()">☰</div>
+                <ul class="nav-menu">
+                    <li><a href="/fr/index.html">Accueil</a></li>
+                    <li><a href="/fr/apropos.html">A Propos</a></li>
+                    <li><a href="/fr/etudieraessf.html">Etudier à ESSF</a></li>
+                </ul>
+
+                <div class="switch">
+                    <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+                    <label for="language-toggle"></label>
+                    <span class="on"><a href="/about.html">EN</a></span>
+                    <span class="off"><a href="/fr/apropos.html">FR</a></span>
+                </div>
+
+                <button class="openBtn" onclick="openSearch()"><i class="fa fa-search"></i></button>
+                <div id="searchOverlay" class="overlay">
+                    <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                    <div class="overlay-content">
+                        <form action="#">
+                            <input type="text" placeholder="Search..." name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--This is the image of the EESF school!!!-->
+        <div class="back-div">
+            <img src="/images/essflogo.jpg" alt="ESSF Logo">
+            <!--<p>Connecting people to reshape the future!</p> -->
+        </div>
+    </div>
+</header>
+    </div> <!-- Header will be loaded here -->
+
+    <main>
+        <section>
+            <h4 class="whoweare">QUI NOUS SOMMES</h4>
+            <p id="whoweareparagraph">
+                L'Institut Recherche, Arts et Langues (RAL) est un laboratoire de recherche et de langues interdisciplinaire 
+                à but non lucratif, situé à l'École Supérieure Sainte-Félicité (ESSF), l'une des principales universités privées 
+                du Bénin, en Afrique de l'Ouest. L'Institut a été officiellement inauguré le 24 octobre 2020.
+            </p>
+            <hr>
+        </section>
+    
+        <section class="vision-mission-principle">
+            <h2>VISION, MISSION & PRINCIPLES</h2>
+            <p>À l'Institut RAL, notre vision nous pousse à travailler sans relâche, ouvrant la voie à un modèle d'érudition qui
+              éclaire et rassemble les individus autour d'un objectif commun : remodeler l'avenir de l'humanité. Notre mission 
+              nous guide, nous poussant à proposer des solutions innovantes aux problèmes rencontrés par les communautés et les individus. 
+              C'est grâce à une recherche rigoureuse, une formation complète et des publications percutantes que nous faisons de cette vision une réalité.
+              Forts de ces aspirations, nous adhérons à neuf principes fondamentaux qui sous-tendent notre travail à l'Institut RAL.
+            </p>
+        </section>
+    
+        <section>
+            <p>Nous nous engageons à connecter les gens pour façonner l'avenir. Le principe suivant sous-tend notre travail à l'Institut RAL.</p>
+    
+            <div class="container" id="principles-container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-6">
+                        <ul>
+                            <li><strong>Apprentissage</strong><br>
+                                Nous sommes convaincus que l’apprentissage libère l’énergie créatrice et le potentiel des individus ; il fait d’eux des acteurs actifs de l’amélioration de leurs conditions sociales.
+                            </li><br>
+    
+                            <li><strong>Qualité</strong><br>
+                                Nous associons toujours l’excellence à notre image avec le désir d’atteindre les meilleures qualités possibles dans chaque réalisation.
+                            </li><br>
+    
+                            <li><strong>Autonomisation</strong><br>
+                                Nous croyons fermement que l’égalité d’accès aux opportunités est un moyen efficace pour les personnes socialement vulnérables de gravir les échelons sociaux si on leur en donne la chance.
+                            </li><br>
+
+                            <!-- Chinua Image appears after 3rd principle -->
+                            <li class="principle-image only-mobile">
+                                <figure>
+                                    <img src="/images/chinua.jpg" alt="Chinua" class="img-fluid mb-1">
+                                    <figcaption>Chinua Achebe</figcaption>
+                                </figure>
+                            </li><br>
+    
+                            <li><strong>Vérité et fiabilité</strong><br>
+                                Notre seule quête est la Vérité, car nous croyons, comme William O. Douglas, que « la vérité est l'antagoniste approprié et suffisant de l'erreur » et que la vérité est la seule voie pour 
+                                l'homme et les communautés humaines vers l'émancipation et le bonheur. Dans cette quête de la Vérité, nous choisissons non seulement de considérer la fiabilité comme notre principe de base, mais aussi de toujours privilégier la connaissance fiable.
+                            </li><br>
+    
+                            <li><strong>Leadership transformateur et éthique</strong><br>
+                                Nous faisons confiance à un leadership transformateur et éthique pour faire ressortir le meilleur de chaque personne et créer un monde meilleur.
+                            </li><br>
+    
+                            <li><strong>Liberté de pensée et d'expression</strong><br>
+                               Nous croyons fermement que l’homme a besoin d’une pleine liberté de pensée et d’expression pour réaliser ses plus grandes capacités et devenir un 
+                               citoyen cultivé des communautés nationales et mondiales.
+                            </li><br>
+
+                            <!-- Ama Image after 6th principle -->
+                            <li class="principle-image only-mobile">
+                                <figure>
+                                    <img src="/images/ama.jpg" alt="Ama" class="img-fluid mb-1">
+                                    <figcaption>Ama Ata Aidoo</figcaption>
+                                </figure>
+                            </li><br>
+    
+                            <li><strong>Dignité humaine</strong><br>
+                                L’ensemble de notre travail est motivé par le désir de promouvoir la dignité humaine, de comprendre l’homme et l’univers, et d’explorer la meilleure façon dont ces deux éléments peuvent servir durablement l’humanité.
+                            </li><br>
+    
+                            <li><strong>Égalité des sexes</strong><br>
+                                Nous sommes convaincus que l’autonomisation des femmes revient à doubler la vitesse d’amélioration de la condition humaine et à créer un monde plus juste, plus prospère et plus pacifique.
+                            </li><br>
+    
+                            <li><strong>Interconnexion</strong><br>
+                                Malgré les récents retours au nationalisme, nous pensons que l’accomplissement fondamental de la mondialisation, qui est un monde connecté dans lequel les problèmes auxquels l’humanité est confrontée rassemblent les penseurs et les contributeurs au-delà des frontières et des cultures, sans aucune discrimination, ne doit pas être remis en cause.
+                            </li> <br>
+
+                            <!-- Ngugi image after 9th principle -->
+                            <li class="principle-image only-mobile">
+                                <figure>
+                                    <img src="/images/ngugi.jpg" alt="Ngugi" class="img-fluid mb-1">
+                                    <figcaption>Ngugi wa Thiong'o</figcaption>
+                                </figure>
+                            </li>                          
+                        </ul>
+                    </div>
+    
+                    <div class="col-md-6 col-lg-6">
+                        <div class="row imagesOriginal" style="margin-left: 10vw;">
+                            <div class="col-12" style="margin-top: 5vh; margin-bottom: 25vh;">
+                                <figure>
+                                    <img src="/images/chinua.jpg" alt="Chinua"
+                                        class="img-fluid mb-1">
+                                    <figcaption>Chinua Achebe</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-12" style="margin-bottom: 25vh;">
+                                <figure>
+                                    <img src="/images/ama.jpg" alt="ama" class="img-fluid mb-1">
+                                    <figcaption>Ama Ata Aidoo</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-12">
+                                <figure>
+                                    <img src="/images/ngugi.jpg" alt="ngugi"
+                                        class="img-fluid mb-1">
+                                    <figcaption>Ngugi wa Thiong'o</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <div>
+                <footer>
+    <!-- Social Media Section -->
+    <div class="container text-center py-4">
+        <h3 class="mb-3" style="font-family: 'PT Sans Narrow', sans-serif; font-weight: 700;">SUIVEZ-NOUS</h3>
+        <div class="d-flex justify-content-center gap-3">
+            <!-- Facebook -->
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link text-facebook">
+                <i class="fab fa-facebook fa-2x"></i>
+            </a>
+            <!-- Twitter -->
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link text-twitter">
+                <i class="fab fa-twitter fa-2x"></i>
+            </a>
+            <!-- Instagram -->
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+                class="social-link text-instagram">
+                <i class="fab fa-instagram fa-2x"></i>
+            </a>
+            <!-- YouTube -->
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-link text-youtube">
+                <i class="fab fa-youtube fa-2x"></i>
+            </a>
+            <!-- WhatsApp -->
+            <a href="https://wa.me/yourphonenumber" target="_blank" rel="noopener noreferrer"
+                class="social-link text-whatsapp">
+                <i class="fab fa-whatsapp fa-2x"></i>
+            </a>
+        </div>
+    </div>
+    <div>
+        <button class="button button5">
+            <a target="_self" id="signup-btn" href="/signup.html">Se connecter</a>
+        </button>
+
+    </div>
+         <ul class="footer-menu">
+            <li><a href="#">Politique de Confidentialité</a></li>
+            <li><a href="#">Conditions Générales</a></li>
+        </ul>
+</footer>
+    </div> <!-- Footer will be loaded here -->
+
+    <script src="/scripts/index.js"></script> <!-- Home Page JS -->
+    <script src="/scripts/global.js"></script> <!-- For Loading Header/Footer -->
+</body>
+
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etudier à ESSF</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main.css"> <!-- Header / Footer Styles -->
+    <link rel="stylesheet" href="/css/studyatessf.css"> <!-- Home Page Specific Styles -->
+</head>
+
+<body>
+
+    <div>
+              <header>
+    <div class="grid-container">
+        <div class="front-div">
+            <div id="heading">
+
+                <span class="essf-name">
+                    <span>ECOLE</span> <br>
+                    <span>SUPERIEURE</span> <br>
+                    <span>SAINTE</span> <br>
+                    <span>FELICITE</span> <br>
+                    <span>(ESSF)</span>
+                </span>
+
+                <div class="institute-info">
+                    <img src="/images/rali-logo.png" alt="Logo RALI" class="logo">
+                    <span class="crimson-text-bold-italic">Research,
+                        Arts & <br> Language Institute</span>
+                </div>
+
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="/fr/index.html" class="nav-link essf-name">Accueil</a></li>
+                        <li><a href="/fr/apropos.html" class="nav-link essf-name">A Propos</a></li>
+                        <li><a href="/fr/etudieraessf.html" class="nav-link essf-name">Etudier à ESSF</a></li>
+                    </ul>
+                </nav>
+
+                <div class="hamburger" onclick="toggle()">☰</div>
+                <ul class="nav-menu">
+                    <li><a href="/fr/index.html">Accueil</a></li>
+                    <li><a href="/fr/apropos.html">A Propos</a></li>
+                    <li><a href="/fr/etudieraessf.html">Etudier à ESSF</a></li>
+                </ul>
+
+                <div class="switch">
+                    <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+                    <label for="language-toggle"></label>
+                    <span class="on"><a href="/studyatessf.html">EN</a></span>
+                    <span class="off"><a href="/fr/etudieraessf.html">FR</a></span>
+                </div>
+
+                <button class="openBtn" onclick="openSearch()"><i class="fa fa-search"></i></button>
+                <div id="searchOverlay" class="overlay">
+                    <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                    <div class="overlay-content">
+                        <form action="#">
+                            <input type="text" placeholder="Search..." name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--This is the image of the EESF school!!!-->
+        <div class="back-div">
+            <img src="/images/essflogo.jpg" alt="ESSF Logo">
+            <!--<p>Connecting people to reshape the future!</p> -->
+        </div>
+    </div>
+</header>
+    </div> <!-- Header will be loaded here -->
+
+    <main>
+                <!-- Main Image with Overlays -->
+                <div class="imgmain">
+                    <img src="/images/studyatessf.jpg" alt="Study at ESSF">
+                    <div class="overlay-text overlay-text-imgmain">Premier cycle</div>
+                    <div class="overlay-text overlay-text-imgmain2">Troisième cycle</div>
+                    <div class="overlay-text overlay-text-imgmain3">Nous sommes ravis que vous envisagiez d’étudier à l’ESSF.</div>
+                </div>
+                
+                <!-- Find Your Course Section -->
+                <div class="text-center">
+                    <a href="/images/prospectus.pdf" class="btn btn-danger my-4">Trouvez votre cours</a>
+                </div>
+                
+                <!-- History Section -->
+                <div class="history-section">
+                    <h2>HISTORY OF ESSF</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="/images/essfbat.jpg" alt="ESSF Building" class="img-fluid">
+                        </div>
+                        <div class="col-md-6">
+                            <p class="historyText">
+                                L'Ecole Supérieure Sainte Félicité a été créée en 2005 pour répondre à de nombreuses demandes. <br>
+                                La première demande est venue des parents d'un grand nombre d'élèves fréquentant le groupe des lycées 
+                                Sainte-Félicité, qui ont été très impressionnés par le haut niveau de gestion pédagogique, la qualité 
+                                de l'organisation et de l'allocation de l'ensemble des opérations et des ressources liées à l'éducation 
+                                dans ces lycées. <br>
+                                La plupart des parents souhaitaient que leurs enfants poursuivent leurs études dans un environnement 
+                                organisationnel et pédagogique de qualité équivalente à celui de l'enseignement supérieur. Ils ont donc 
+                                déposé une demande officielle de création d'un établissement d'enseignement supérieur. <br>
+                                La deuxième demande est née du constat que les lycées Sainte-Félicité affluaient sur le marché de 
+                                l'enseignement supérieur des centaines de lycéens titulaires de baccalauréats qui peinaient à satisfaire 
+                                leur besoin d'une université offrant non seulement une formation adaptée (informatique, systèmes industriels, 
+                                maintenance biomédicale, etc.), mais aussi un niveau d'exigence élevé. <br>
+                               Le défi est relevé, l’École Supérieure Sainte Félicité a fait honneur à la réputation de ses lycées et figure 
+                               parmi les meilleurs établissements d’enseignement supérieur du Bénin, pour la plus grande fierté des parents d’élèves.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Classes and Labs Section -->
+                <div class="classes-section">
+                    <h2>CLASSES</h2>
+                    <p>Rejoignez nos cours, faites-vous des amis, apprenez et grandissez !</p>
+                    <div class="row equal-height">
+                        <div class="col-md-6">
+                            <img src="/images/class1.jpg" alt="Classroom 1" class="img-fluid">
+                        </div>
+                        <div class="col-md-6">
+                            <img src="/images/class2.jpg" alt="Classroom 2" class="img-fluid">
+                        </div>
+                    </div>
+                
+                    <h2>LABORATOIRES</h2>
+                    <p>C'est en forgeant qu'on devient forgeron, dit-on. Nos laboratoires offrent un environnement idéal pour l'apprentissage pratique.</p>
+                    <div class="row equal-height">
+                        <div class="col-md-6">
+                            <img src="/images/laboratoire1.jpg" alt="Lab 1" class="img-fluid">
+                        </div>
+                        <div class="col-md-6">
+                            <img src="/images/laboratoire2.jpg" alt="Lab 2" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- School Board Section -->
+                <div id="school-board" class="my-4">
+                    <h4>L'ADMINISTRATION SCOLAIRE</h4>
+                    <div class="carousel-container">
+                        <div id="flex" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="/images/director.jpg" alt="Director" class="d-block w-100">
+                                    <div style="text-align: center;"><b>Dr René Kinée ALLAMAGBO - Directeur de l'ESSF</b></div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/images/angele.jpeg" alt="Director of Studies"
+                                        class="d-block w-100">
+                                    <div style="text-align: center;"><b>Angele HOUESSOU - Directeur des études</b></div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/images/guedeguy.jpeg" alt="Principal Admin Assistant"
+                                        class="d-block w-100">
+                                    <div style="text-align: center;"><b>Guy GUEDE M. - Assistante Administrative Principale</b></div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/images/akakpovijuliette.jpeg" alt="Principal Admin Assistant"
+                                        class="d-block w-100">
+                                    <div style="text-align: center;"><b>Juliette AKAKPOVI - Adjointe Administrative</b></div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/images/yvettetotin.jpeg" alt="Principal Admin Assistant"
+                                        class="d-block w-100">
+                                    <div style="text-align: center;"><b>Yvette TOTIN - Comptable</b></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+    </main>
+
+    <div id="footer"></div> <!-- Footer will be loaded here -->
+
+    <script src="/scripts/index.js"></script> <!-- Home Page JS -->
+    <script src="/scripts/global.js"></script> <!-- For Loading Header/Footer -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

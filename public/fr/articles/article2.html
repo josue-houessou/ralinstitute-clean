@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Institut RAL célèbre le succès des étudiants.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main.css"> <!-- Header / Footer Styles -->
+    <link rel="stylesheet" href="/css/articles/article2.css"> <!-- Home Page Specific Styles -->
+</head>
+
+<body>
+
+    <div>
+        <header>
+    <div class="grid-container">
+        <div class="front-div">
+            <div id="heading">
+
+                <span class="essf-name">
+                    <span>ECOLE</span> <br>
+                    <span>SUPERIEURE</span> <br>
+                    <span>SAINTE</span> <br>
+                    <span>FELICITE</span> <br>
+                    <span>(ESSF)</span>
+                </span>
+
+                <div class="institute-info">
+                    <img src="/images/rali-logo.png" alt="Logo RALI" class="logo">
+                    <span class="crimson-text-bold-italic">Research,
+                        Arts & <br> Language Institute</span>
+                </div>
+
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="/fr/index.html" class="nav-link essf-name">Accueil</a></li>
+                        <li><a href="/fr/apropos.html" class="nav-link essf-name">A Propos</a></li>
+                        <li><a href="/fr/etudieraessf.html" class="nav-link essf-name">Etudier à ESSF</a></li>
+                    </ul>
+                </nav>
+
+                <div class="hamburger" onclick="toggle()">☰</div>
+                <ul class="nav-menu">
+                    <li><a href="/fr/index.html">Accueil</a></li>
+                    <li><a href="/fr/apropos.html">A Propos</a></li>
+                    <li><a href="/fr/etudieraessf.html">Etudier à ESSF</a></li>
+                </ul>
+
+                <div class="switch">
+                    <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+                    <label for="language-toggle"></label>
+                    <span class="on"><a href="/articles/article2.html">EN</a></span>
+                    <span class="off"><a href="/">FR</a></span>
+                </div>
+
+                <button class="openBtn" onclick="openSearch()"><i class="fa fa-search"></i></button>
+                <div id="searchOverlay" class="overlay">
+                    <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                    <div class="overlay-content">
+                        <form action="#">
+                            <input type="text" placeholder="Search..." name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--This is the image of the EESF school!!!-->
+        <div class="back-div">
+            <img src="/images/essflogo.jpg" alt="ESSF Logo">
+            <!--<p>Connecting people to reshape the future!</p> -->
+        </div>
+    </div>
+</header>
+    </div> <!-- Header will be loaded here -->
+
+    <div class="container mt-4">
+        <!-- Header Section -->
+        <p class="titleArticle">L'Institut RAL célèbre le succès des étudiants.</p>
+        <p class="authorName">par Paul-Marie Houessou</p>
+
+    
+        <!-- Article Section -->
+        <section class="article mb-4">
+            <p class="hook">
+                Dix étudiants de niveau B1 et quarante étudiants de niveau A2 de l'Université d'Abomey-Calavi (UAC) ayant 
+                terminé la formation d'été de maîtrise de l'anglais 2024 parrainée par Pro-RUWA ont été récompensés par une 
+                cérémonie de remise de certificats le samedi 14 décembre.
+            </p>
+            <p>
+               Cette deuxième édition de la formation d'été parrainée par Pro-RUWA s'est déroulée de juillet à septembre. 
+               La plupart des participants provenaient de la Faculté des Sciences Agronomiques de l'Université d'Abomey-Calavi. 
+               Des étudiants d'autres facultés, notamment la Faculté des Sciences Économiques et de Gestion (FASEG), l'Institut 
+               National de l'Eau (INE) et le Département d'Anglais du Collège Universitaire d'Adjarra, étaient également impliqués.     
+            </p>
+            <p>
+               La cérémonie de remise des certificats a été présidée par le vice-doyen de la Faculté des Sciences Agronomiques, le Pr
+               Augustin AOUDJI. Le Pr Luc Hypolite Dossa, coordinateur du programme « Promotion des capacités académiques pour une utilisation 
+               durable des ressources agricoles en Afrique de l'Ouest », était également présent. Il a réitéré son engagement à poursuivre ses 
+               efforts pour le développement des capacités académiques des étudiants.
+            </p>
+        </section>
+    
+        <!-- Gallery Section -->
+        <section class="gallery">
+            <h2 class="text-center mb-3">Temps forts de l'événement</h2>
+            <div class="row g-3">
+                <div class="col-md-4 col-sm-6">
+                    <div class="card">
+                        <img id="pro9" src="/images/pro9.jpg" class="card-img-top"
+                            alt="Award ceremony moment">
+                        <div class="card-body">
+                            <p class="card-text text-center">Falonne, major de la classe B1, reçoit son certificat des mains du professeur AOUDJI</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card">
+                        <img src="/images/pro10.jpg" class="card-img-top" alt="Group photo">
+                        <div class="card-body">
+                            <p class="card-text text-center">Jean-Charles, élève de niveau A2, reçoit son certificat des mains du professeur Dossa.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card">
+                        <img src="/images/pro7.jpg" class="card-img-top"
+                            alt="Celebration moment">
+                        <div class="card-body">
+                            <p class="card-text text-center">Dr. Houessou prononçant un discours lors de la cérémonie</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row g-3">
+                <div class="col-md-4 col-sm-6">
+                    <div class="card">
+                        <img src="/images/pro1.jpg" class="card-img-top"
+                            alt="Award ceremony moment">
+                        <div class="card-body">
+                            <p class="card-text text-center">Husein, un étudiant B1 recevant son certificat du Prof AOUDJI
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card">
+                        <img src="/images/pro2.jpg" class="card-img-top" alt="Group photo">
+                        <div class="card-body">
+                            <p class="card-text text-center">Manassé, un étudiant A2 recevant son certificat du professeur Dossa
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card">
+                        <img src="/images/pro3.jpg" class="card-img-top"
+                            alt="Celebration moment">
+                        <div class="card-body">
+                            <p class="card-text text-center">Falonne, major de la classe B1, reçoit son prix des mains du Pr AOUDJI et du Dr Houessou</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row g-3">
+                <div class="col-md-4 col-sm-6">
+                    <div class="card">
+                        <img src="/images/pro4.jpg" class="card-img-top"
+                            alt="Award ceremony moment">
+                        <div class="card-body">
+                            <p class="card-text text-center">Photo de groupe avec d'excellents élèves</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card">
+                        <img src="/images/pro5.jpg" class="card-img-top" alt="Group photo">
+                        <div class="card-body">
+                            <p class="card-text text-center">Photo de groupe avec des sourires fiers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card">
+                        <img src="/images/pro6.jpg" class="card-img-top"
+                            alt="Celebration moment">
+                        <div class="card-body">
+                            <p class="card-text text-center">Groupe de musique se produisant lors de la cérémonie</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    </div>
+
+    <div>
+        <footer>
+    <!-- Social Media Section -->
+    <div class="container text-center py-4">
+        <h3 class="mb-3" style="font-family: 'PT Sans Narrow', sans-serif; font-weight: 700;">SUIVEZ-NOUS</h3>
+        <div class="d-flex justify-content-center gap-3">
+            <!-- Facebook -->
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link text-facebook">
+                <i class="fab fa-facebook fa-2x"></i>
+            </a>
+            <!-- Twitter -->
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link text-twitter">
+                <i class="fab fa-twitter fa-2x"></i>
+            </a>
+            <!-- Instagram -->
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+                class="social-link text-instagram">
+                <i class="fab fa-instagram fa-2x"></i>
+            </a>
+            <!-- YouTube -->
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-link text-youtube">
+                <i class="fab fa-youtube fa-2x"></i>
+            </a>
+            <!-- WhatsApp -->
+            <a href="https://wa.me/yourphonenumber" target="_blank" rel="noopener noreferrer"
+                class="social-link text-whatsapp">
+                <i class="fab fa-whatsapp fa-2x"></i>
+            </a>
+        </div>
+    </div>
+    <div>
+        <button class="button button5">
+            <a target="_self" id="signup-btn" href="/signup.html">Se connecter</a>
+        </button>
+
+    </div>
+         <ul class="footer-menu">
+            <li><a href="#">Politique de Confidentialité</a></li>
+            <li><a href="#">Conditions Générales</a></li>
+        </ul>
+</footer>
+    </div> <!-- Footer will be loaded here -->
+
+    <script src="/scripts/index.js"></script> <!-- Home Page JS -->
+    <script src="/scripts/global.js"></script> <!-- For Loading Header/Footer -->
+</body>
+
+</html>

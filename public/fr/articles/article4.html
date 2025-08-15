@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article 4 - RALI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main.css"> <!-- Header / Footer Styles -->
+    <link rel="stylesheet" href="/css/index.css"> <!-- Home Page Specific Styles -->
+    <link rel="stylesheet" href="/css/articles/article4.css"> <!-- Home Page Specific Styles -->
+
+</head>
+
+<body>
+
+    <div>
+        <!--This is the header! The red intro containing the name of the institute and the logos.-->
+<header>
+    <div class="grid-container">
+        <div class="front-div">
+            <div id="heading">
+
+                <span class="essf-name">
+                    <span>ECOLE</span> <br>
+                    <span>SUPERIEURE</span> <br>
+                    <span>SAINTE</span> <br>
+                    <span>FELICITE</span> <br>
+                    <span>(ESSF)</span>
+                </span>
+
+                <div class="institute-info">
+                    <img src="/images/rali-logo.png" alt="Logo RALI" class="logo">
+                    <span class="crimson-text-bold-italic">Research,
+                        Arts & <br> Language Institute</span>
+                </div>
+
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="/fr/index.html" class="nav-link essf-name">Accueil</a></li>
+                        <li><a href="/fr/apropos.html" class="nav-link essf-name">A Propos</a></li>
+                        <li><a href="/fr/etudieraessf.html" class="nav-link essf-name">Etudier à ESSF</a></li>
+                    </ul>
+                </nav>
+
+                <div class="hamburger" onclick="toggle()">☰</div>
+                <ul class="nav-menu">
+                    <li><a href="/fr/index.html">Accueil</a></li>
+                    <li><a href="/fr/apropos.html">A Propos</a></li>
+                    <li><a href="/fr/etudieraessf.html">Etudier à ESSF</a></li>
+                </ul>
+
+                <div class="switch">
+                    <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+                    <label for="language-toggle"></label>
+                    <span class="on"><a href="/articles/article4.html">EN</a></span>
+                    <span class="off"><a href="/">FR</a></span>
+                </div>
+
+                <button class="openBtn" onclick="openSearch()"><i class="fa fa-search"></i></button>
+                <div id="searchOverlay" class="overlay">
+                    <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                    <div class="overlay-content">
+                        <form action="#">
+                            <input type="text" placeholder="Search..." name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--This is the image of the EESF school!!!-->
+        <div class="back-div">
+            <img src="/images/essflogo.jpg" alt="ESSF Logo">
+            <!--<p>Connecting people to reshape the future!</p> -->
+        </div>
+    </div>
+</header>
+    </div> <!-- Header will be loaded here -->
+
+    <main>
+        <!--reste de la page de la barre de navigation jusqu'à la fin-->
+        <div class="row">
+            <div class="col-md-8">
+                <p class="titleArticle">« Cette formation permet à tout apprenant d'anglais de s'épanouir et de s'épanouir » – Esther Monsaya</p>
+                <p class="authorName">par Esther Monsaya  <br> Abomey-Calavi, Bénin <br> 25 Mai 2025</p> 
+                <!--<h6 class="text-muted">by Abèbi</h6>-->
+                <div class="upper-row">
+                    <div>
+                        <figure>
+                            <img src="/images/estherMonsaya.jpg" alt="Tunji outside graduation center" width="300" height="450">
+                            <figcaption class="esther">Esther Monsaya en class</figcaption>
+                        </figure>
+                    </div>
+                    <div>
+                        <p class="text-left hook">
+                            Alors que notre premier cours B2 de l'année touche à sa fin, nous avons mis les apprenants au défi de nous raconter par écrit comment le cours les a aidés.
+                            Dans ce premier article de la série, Esther Monsaya, étudiante au Département de Production Animale de la Faculté de Production Agricole de l'Université 
+                            d'Abomey-Calavi, explique ses progrès dans le cours.  
+                        </p>
+                        <p class="text-left">
+                           Apprendre une langue, c'est briser les barrières. C'est ce que nous avons fait dans ce cours d'anglais du RAL Institute, qui nous donne les outils pour développer 
+                           nos compétences en communication et surmonter les différentes barrières linguistiques auxquelles nous sommes confrontés. Ce cours vise à améliorer les quatre 
+                           compétences de communication : écouter, parler, lire et écrire.   <br> <br>
+
+                            J'avais déjà suivi la classe B1 de l'Institut RAL lors de la formation d'été 2023 parrainée par Pro-RUWA (Université d'Abomey-Calavi),
+                    </div>
+                </div>
+                
+                <p class="text-left">
+                    et j'ai beaucoup apprécié leur approche pédagogique et leur méthodologie.
+                    Avant de commencer la formation actuelle (B2), j'étais plus à l'aise en lecture et en écriture 
+                    qu'en écoute et en expression orale, surtout avec des locuteurs natifs. <br> <br>
+    
+                    En ce qui concerne la <b>compréhension orale</b>, je parvenais à comprendre l'anglais parlé par des Africains comme les 
+                    Nigérians et les Ghanéens. Je pensais donc maîtriser l'écoute, mais j'ai découvert, en écoutant 
+                    des locuteurs natifs en classe, que ce n'était pas le cas. Ce fut un véritable retour aux sources 
+                    lorsque j'ai réalisé que je ne comprenais que des bribes de l'anglais parlé par les Américains. 
+                    Je n'étais pas du tout satisfait.<br> <br>
+    
+                    J'ai ensuite commencé des exercices d'écoute en suivant les techniques de pratique modèle apprises en classe. J'écoutais des locuteurs natifs et je notais ce que j'entendais.
+                    Les cours de phonétique et de phonologie que nous avons suivis m'ont énormément aidé à progresser rapidement, car ils ont constitué une sorte de repère phonique pour mes oreilles et mon cerveau.
+                    Le principe le plus important que j'ai appris en cours d'écoute est le suivant : « Notez simplement ce que vous entendez, même si cela n'a aucun sens pour vous, car le but de cet exercice n'est 
+                    pas de saisir tous les mots, mais d'entraîner votre oreille à saisir clairement ce qui est dit.» À force de pratique acharnée et continue, je peux maintenant
+                    comprendre jusqu'à 80 % de ce que disent les Américains, contre 30 % au début.                    
+                </p>
+
+
+                <center>
+                    <figure>
+                        <img src="/images/b2class2024-article4.jpg" alt="B2 Class session" width="600" height="350">
+                        <figcaption class="esther2">Classe B2 au cours</figcaption>
+                    </figure>
+                    
+                </center> <br>
+
+                <p class="text-left">
+                    Concernant l'<b>expression orale</b>, j'étais l'un des étudiants qui comprenaient ce que disait leur interlocuteur, mais qui restaient bouche bée au moment de prendre la parole. 
+                    Il est impossible de rester le même une fois inscrit aux cours du RAL Institute. L'expression orale est un défi permanent, que ce soit à l'écoute, à la lecture ou à l'écriture. 
+                    Dans chaque cours, on nous fait parler. Impossible d'y échapper, et cela a aidé mon cerveau à développer sa capacité à trouver ses mots plus rapidement. Je suis désormais plus 
+                    confiant lorsque je dois prendre la parole. Je ne manque plus de mots pour exprimer mes idées. Je n'ai pas encore atteint le niveau que je souhaiterais atteindre. Je m'en suis 
+                    rendu compte lorsque le cours a accueilli un intervenant il y a trois semaines. Je ressens toujours du stress en présence de personnes extérieures à la classe. Pour surmonter 
+                    ce stress, j'ai prévu de chercher des occasions de m'exprimer en dehors de la classe, hors de ma zone de confort, comme on nous l'a conseillé. <br> <br>
+
+                    En <b>lecture</b>, j'étais confiant avant de commencer le cours, car j'étais déjà bon en compréhension écrite. Je comprenais 90 à 100 % des textes que je lisais, mais ma prononciation 
+                    était médiocre. Heureusement, nous avons appris à prononcer correctement les sons anglais et nous avons pratiqué de nombreuses règles de prononciation (accentuation des mots et des phrases). 
+                    Ma prononciation a littéralement changé depuis. Je lis maintenant avec une bien meilleure prononciation et, même lorsque je rencontre un mot pour la première fois, j'ai les outils pour le 
+                    décomposer et le lire avec assurance et assurance. Lorsque je suis devant un texte, je le lis à voix haute presque systématiquement afin d'aider mon cerveau à développer la capacité et l'habitude 
+                    d'utiliser les outils de prononciation et de se familiariser avec certaines structures d'accentuation complexes. <br> <br>
+
+                    En ce qui concerne l'<b>écriture</b>, je n'avais pas beaucoup de difficultés; c'est plutôt ce que je pensais avant de m'inscrire à la formation du RAL Institute. Je pensais qu'écrire se résumait à 
+                    la capacité de rédiger des textes ou des dissertations en anglais. J'ai maintenant découvert que l'écriture de phrases obéit à des règles ; c'est une activité technique et artistique qui exige des 
+                    compétences et des connaissances spécifiques pour écrire avec détermination, clarté et efficacité. J'ai également remarqué que j'avais beaucoup de travail à faire à l'écrit, car je n'avais pas l'habitude 
+                    de pratiquer cette compétence. <br> <br>
+
+                    En résumé, cette formation permet à tout apprenant d'anglais de devenir un locuteur natif, même s'il n'est pas dispensé dans un pays anglophone.
+                    C'est un programme de formation en anglais de classe mondiale. Je félicite l'Institut RAL pour avoir développé une formation d'une telle qualité. Je la recommande vivement à tous ceux qui rêvent de parler couramment et avec confiance l'anglais. 
+                </p>
+    
+            </div>
+        </div>
+    </main>
+
+
+    <div>
+          <footer>
+    <!-- Social Media Section -->
+    <div class="container text-center py-4">
+        <h3 class="mb-3" style="font-family: 'PT Sans Narrow', sans-serif; font-weight: 700;">SUIVEZ-NOUS</h3>
+        <div class="d-flex justify-content-center gap-3">
+            <!-- Facebook -->
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link text-facebook">
+                <i class="fab fa-facebook fa-2x"></i>
+            </a>
+            <!-- Twitter -->
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link text-twitter">
+                <i class="fab fa-twitter fa-2x"></i>
+            </a>
+            <!-- Instagram -->
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+                class="social-link text-instagram">
+                <i class="fab fa-instagram fa-2x"></i>
+            </a>
+            <!-- YouTube -->
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-link text-youtube">
+                <i class="fab fa-youtube fa-2x"></i>
+            </a>
+            <!-- WhatsApp -->
+            <a href="https://wa.me/yourphonenumber" target="_blank" rel="noopener noreferrer"
+                class="social-link text-whatsapp">
+                <i class="fab fa-whatsapp fa-2x"></i>
+            </a>
+        </div>
+    </div>
+    <div>
+        <button class="button button5">
+            <a target="_self" id="signup-btn" href="/signup.html">Se connecter</a>
+        </button>
+
+    </div>
+         <ul class="footer-menu">
+            <li><a href="#">Politique de Confidentialité</a></li>
+            <li><a href="#">Conditions Générales</a></li>
+        </ul>
+</footer>
+    </div> <!-- Footer will be loaded here -->
+
+    <script src="/scripts/index.js"></script> <!-- Home Page JS -->
+    <script src="/scripts/global.js"></script> <!-- For Loading Header/Footer -->
+</body>
+
+</html>
