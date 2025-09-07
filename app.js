@@ -38,9 +38,17 @@ app.use((err, req, res, next) => {
 //app.use('/fr', express.static(path.join(__dirname, 'public', 'fr')));
 
 // Serve frontend
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+//app.get('*', (req, res) => {
+    //res.sendFile(path.join(__dirname, 'public', 'index.html'));
+//});
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
+
+app.get('/fr', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'fr', 'index.html'));
+});
+
 
 // Error handling
 app.use((error, req, res, next) => {
